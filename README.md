@@ -7,4 +7,4 @@ El objetivo de estas notas es contar con un lugar de referencia personal, una es
 ## Lista de apuntes
 <!-- - [TITULO](apuntes/...) -->
 - [Git y GitHub](apuntes/Git%20y%20GitHub.md)
-<!-- - [JavaScript]() -->
+- [JavaScript](apuntes/JavaScript.md)
