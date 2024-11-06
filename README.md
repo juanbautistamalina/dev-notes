@@ -9,4 +9,5 @@ El objetivo de estas notas es contar con un lugar de referencia personal, una es
 - [Git y GitHub](apuntes/Git%20y%20GitHub.md)
 - [JavaScript](apuntes/JavaScript.md)
 - [Bootstrap](apuntes/Bootstrap.md)
+- [Tailwind CSS](apuntes/Tailwind%20CSS.md)
 - [Meta Front-End Developer](apuntes/Meta%20Front-End%20Developer.md)
