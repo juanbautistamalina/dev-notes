@@ -20,7 +20,7 @@ El objetivo de estas notas es contar con un lugar de referencia personal, una es
 4. [JavaScript](apuntes/JavaScript.md)  
    💡 Lógica, manipulación del DOM, eventos y más.
 
-5. [JavaScript en Profundidad](apuntes/JavaScript%20en%20Profundidad.md) 
+5. [JavaScript en Profundidad](apuntes/JavaScript%20en%20Profundidad.md)   
    📌 Más explicaciones, detalles y ejemplos.
 
 6. [React](apuntes/React.md)  
