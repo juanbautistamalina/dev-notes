@@ -51,7 +51,7 @@
 - **`<!— contenido —>`**: Comentario HTML
 - **Ícono**: Se necesita una imagen de 32x32 o 64x64
     
-    ```css
+    ```html
     <link rel="icon" href="favicon.ico" type="image/png">
     ```
     
@@ -149,7 +149,7 @@
 
 ## ***Integrar CSS en HTML***
 
-```css
+```html
 <link rel="stylesheet" href="style.css">
 ```
 
@@ -182,13 +182,13 @@
 
 - **Opción 1**: etiqueta `<link>` o `@import`
 
-```css
-/*OPCIÓN 1: EN HTML*/
+```html
+<!-- OPCIÓN 1: EN HTML  -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-/*OPCION 1: EN CSS*/
+<!-- OPCIÓN 2: EN CSS-->
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 ```
 
@@ -798,4 +798,196 @@ grid-template-areas:
     "header header header"
     "main main aside"
     "footer footer footer";
+```
+---
+
+## Grid (explicado de otra manera)
+
+- **Lenguaje CSS (Explicaciones)**: [https://lenguajecss.com/](https://lenguajecss.com/)
+- **Curso de Google**: [https://web.dev/learn/css?hl=es](https://web.dev/learn/css?hl=es)
+- **Documentación**: [https://developer.mozilla.org/es/docs/Web/CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+
+## **Propiedades**
+
+- **display: grid**: Convierte al contenedor en una cuadrícula
+- **grid-template-column**: Permite modificar la cantidad de columnas que tendrá la cuadrícula, y su medida.
+- **grid-template-rows**: Permite modificar la cantidad de filas que tendrá la cuadrícula, y su medida.
+- **justify-items**: Permite alinear dentro de la celda (de izquierda a derecha) los grid items. Algunos de sus valores son: start, end, center. *Se aplica al contenedor padre*.
+- **justify-self**: Permite alinear un ítem dentro de la celda (de izquierda a derecha). Se aplica a un grid item.
+- **align-items**: Permite alinear dentro de la celda (de arriba hacia abajo) los grid items. Se aplica al contenedor padre.
+- **align-self**: Permite alinear dentro de la celda (de arriba hacia abajo) un grid item. Se aplica a un grid item.
+- **justify-content**: Permite alinear todo el contenido de la cuadrícula de forma horizontal
+- **align-content**: Permite alinear todo el contenido de la cuadrícula de forma vertical.
+- **place-content**: Es un *atajo de justify-content y align-content.* Su valor más común es center.
+
+### Columnas
+
+- **grid-column-start**: Permite establecer desde donde inicia una columna.
+- **grid-column-end**: Permite establecer donde termina una columna (no incluye el último).
+
+### Filas
+
+- **grid-auto-rows**: Permite establecer el tamaño de las filas que se crean por defecto.
+- **grid-row-start**: Permite establecer desde donde inicia una fila.
+- **grid-row-end**: Permite establecer donde termina una fila (no incluye el último).
+
+## **Funciones**
+
+- **repeat(cant_repeticiones, medida)**: Función que permite repetir x cantidad de veces una determinada medida, generalmente utilizada para crear varias filas o columnas de la misma medida. Esta función recibe 2 parámetros: La cantidad de veces que debe repetirse y la medida. Por ejemplo: **repeat(5, 1fr) = 1fr 1fr 1fr 1fr 1fr**
+- **minmax(valor_minimo, valor_máximo)**: Función que permite establecer un valor mínimo y máximo ya sea a una columna o fila. Por ejemplo: **minmax(100px, 1fr)** → En este ejemplo el valor mínimo de la columna va a ser de 100px, pero cuando pueda ser mayor se va a comportar como si fuese una fracción.
+
+## Grid áreas
+
+- grid-area: Esta propiedad se le coloca a los ítems grids, y sirve para colocarle un nombre a cada ítem, para luego posicionarlo “visualmente” en el grid template.
+- grid-template-areas: Propiedad que se le coloca al contenedor grid. Sirve para posicionar los ítems de forma visual (es un reemplazo más efectivo que utilizar grid-column-start y sus variantes en cada ítem).
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 35px 1fr 100px;
+  height: 100vh;
+  grid-template-areas:
+    "header header"
+    "aside content"
+    "footer footer";
+}
+
+.container header {
+  background: #09f;
+  grid-area: header;
+}
+
+.container aside {
+  background: #62e;
+  grid-area: aside;
+}
+
+.container main {
+  background: #af2;
+  grid-area: content;
+}
+
+.container footer {
+  background: #444;
+  grid-area: footer;
+}
+```
+
+## Ejemplo Responsive en Grid
+
+- En el siguiente ejemplo se utiliza un contenedor grid con 6 imágenes, de modo que mediante **grid-template-colums** y haciendo uso de las funciones **repeat** y **minmax**, el contenido sea responsivo. Esto funciona por la valor auto-fill.
+    - **auto-fill**: Ubica el número de columnas que sean, que ocupan en el ancho, mientras su ancho mínimo sea de 200px, en el caso del ejemplo. En pocas palabras, en cuanto tiene la oportunidad de que otra se coloque al lado de la otra, lo hará.
+    - **auto-fit**: Se utiliza en pocos casos, cuando hay pocos elementos lo que hace es estirarlos para completar el espacio sobrante.
+    
+    ```css
+    img{
+        width: 100%;
+        height: auto;
+    }
+    
+    div{
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        
+    }
+    ```
+    
+
+---
+
+# Animaciones y Transiciones
+
+## Transiciones
+
+- Permiten cambiar un elemento que transicione de un estado inicial a un estado objetivo.
+- **transition-duration**: Permite modificar la duración de una transición
+- **transition-property**: Permite establecer las propiedades a las que se le van a aplicar la transición (por defecto: all)
+- **transition-timing-function**: Permite establecer las velocidades (inicio, medio y final) de la animación. Algunos de sus posibles valores son: ease, ease-in, ease-out, ease-in-out, step(), cubic-bezier().
+- **transition-delay**: Permite establecer un delay al elemento.
+- **transition**: Esta propiedad contiene a transition-duration, transition-property, transition-timing-function y transition-delay. La forma más utilizada de pasarle los valores es la siguiente: `transition: propiedad duración animación delay`
+
+- **Ejemplo de transición sencillo**
+
+```css
+.elemento{
+	transition: background .3s linear 
+}
+```
+
+- Ejemplo de transición con hover y al quitar el mouse por encima
+
+```css
+.elemento{
+	width: 50px;
+	height: 50px;
+	background: #09f;
+	border-radius: 50%;
+	transition: all 300ms ease-in-out /* la segunda animación */
+}
+
+.elemento:hover{
+	scale: 2;
+	background: red;
+	box-shadow: 0 0 10px red;
+	transition-duration: 1s /* la primera animación*/
+}
+```
+
+## Animaciones
+
+- **`keyframes animation-name { … }`**: Estructura para crear una animación. Dentro de las llaves se deben colocar los diferentes bloques, que serían algo así como fotogramas de la animación
+- **animation-name**: Propiedad aplicada a un elemento. Hay que colocarle el nombre de la animación creada.
+- **animation-duration**: Permite establecer la duración de la animación.
+- **animation-timing-function**: Permite establecer las velocidades (inicio, medio y final) de la animación.
+- **animation-iteration-count**: Permite establecer la cantidad de veces que va a repetirse la animación.
+- **animation-delay**: Permite establecer un delay al comienzo de la animación.
+- **animation-direction**: Permite establecer si la animación va a reproducirse hacia adelante, hacia atrás o en ciclos alternos. Algunos de sus valores son: *normal, reverse y alternate*.
+- **animation-fill-mode**: Define cómo debe aplicarse una animación a los elementos cuando esta no se está ejecutando activamente (después de que termine y antes de que comience). Esto permite que el estilo de la animación se mantenga en el elemento una vez que la animación ha terminado. Algunos de sus valores son:
+    - **none** (valor por defecto)
+    - **forwards**: Cuando la animación termina, el elemento mantiene el estilo (o posición) que corresponde al último fotograma de la animación. Este efecto se mantiene después de la animación.
+    
+- **animation**: Esta propiedad contiene a animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, etc. *Por ejemplo*:
+`animation: nombre duración timing-function delay(opcional) iteration-count(opcional)`
+    
+    ```css
+    .elemento{ 
+    	 	animation-name: mi-animacion;
+    	  animation-duration: 2s;
+    	  animation-timing-function: ease-in-out;
+    	  animation-iteration-count: infinite;
+    	  animation-direction: alternate;
+      }
+    
+    @keyframes mi-animacion{
+    	...
+    }
+    ```
+    
+
+### Animación con scroll
+
+```html
+<div id="progress"></div>
+...
+...
+...
+```
+
+```css
+#progress {
+	position: fixed;
+	top: 0;
+	width: 0%;
+	background: #48e;
+	height: 1em;
+	animation: progress-grow auto linear;
+	animation-timeline: scroll(root block);
+}
+
+@keyframes progress-grow{
+	0%{ width: 0% }
+	100%{ width: 100% }
+}
 ```
