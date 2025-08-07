@@ -182,13 +182,18 @@ Vas a mantenerte motivado y resolver problemas más rápido en grupos como:
 
 ## 📚 Recursos Gratuitos Extra
 Plataformas gratis y muy útiles para aprender:
+- [freeCodeCamp](https://www.freecodecamp.org/): Cursos de desarrollo web y diferentes tecnologías
+- [The Odin Project](https://www.theodinproject.com/): Ruta completa para aprender desarrollo web desde cero, con proyectos reales
 - [JavaScript.info](https://javascript.info): Fundamentos JS a fondo
 - [CS50 – Harvard](https://cs50.harvard.edu): Curso completo de informática
+- [Front-end Developer – Meta](https://www.coursera.org/professional-certificates/meta-front-end-developer): Curso Frontend de Meta
+- [Back-end Developer – Meta](https://www.coursera.org/professional-certificates/meta-back-end-developer): Curso Backend de Meta
 - [Frontend Practice](https://www.frontendpractice.com): Desafíos reales de diseño
 - [Node.js Docs](https://nodejs.org/docs/latest/api/): Docs oficiales, pero amigables
 - [MongoDB University](https://university.mongodb.com): Cursos gratis de MongoDB
 - [useHooks.com](https://usehooks.com): Hooks de React reutilizables
 - [Can I Use](https://caniuse.com): Compatibilidad de funciones en navegadores
+- [DevDocs](https://devdocs.io/): Documentación de múltiples tecnologías en un solo lugar
 
 ---
 
