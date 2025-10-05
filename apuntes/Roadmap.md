@@ -3,16 +3,6 @@
 
 ---
 
-## 📌 Cómo leer este roadmap
-
-Para que puedas ver rápidamente mi progreso, usé este sistema de marcado:
-
-- ✅ **Completado** – Ya estudiado y aplicado en proyectos personales.
-- 🟡 **En curso** – Lo estoy aprendiendo o reforzando actualmente.
-- 🔴 **Pendiente** – Aún no lo empecé o apenas lo exploré.
-
----
-
 ## 🧠 Entendiendo el panorama
 El desarrollo web no es una sola habilidad: es un conjunto de tecnologías que trabajan juntas. Esto es lo que necesitás dominar (y en qué orden):
 
@@ -23,7 +13,7 @@ _(La parte visible para el usuario)_
 
 Todo lo que las personas ven y con lo que interactúan en una app web.
 
-### 🧱 Paso 1: HTML – La Base ✅
+### 🧱 Paso 1: HTML – La Base 
 - Aprendé las etiquetas básicas, formularios, elementos de entrada y estructura semántica.
 - No necesitás dominar cada etiqueta, solo las suficientes para estructurar contenido de forma clara.  
 
@@ -31,17 +21,17 @@ Todo lo que las personas ven y con lo que interactúan en una app web.
 
 ---
 
-### 🎨 Paso 2: CSS – La Capa de Estilo ✅
+### 🎨 Paso 2: CSS – La Capa de Estilo 
 - CSS hace que tu diseño sea atractivo y usable.
 - Empezá con lo básico: colores, márgenes, paddings y posicionamiento.
 - Luego aprendé diseño responsivo con media queries.
-- Para ahorrarte frustraciones, usá un framework como [Tailwind CSS](https://tailwindcss.com). 🟡
+- Para ahorrarte frustraciones, usá un framework como [Tailwind CSS](https://tailwindcss.com). 
 
 🕒 **Tiempo estimado: 2–3 semanas**
 
 ---
 
-### 🧠 Paso 3: JavaScript – Hacer que Funcione ✅
+### 🧠 Paso 3: JavaScript – Hacer que Funcione 
 - Acá tu sitio cobra vida: formularios, sliders, menús, etc.
 - Enfocate en conceptos clave:
   - Variables
@@ -57,7 +47,7 @@ Todo lo que las personas ven y con lo que interactúan en una app web.
 
 ---
 
-### ⚛️ Paso 4: React – Crear Apps Reales 🟡
+### ⚛️ Paso 4: React – Crear Apps Reales 
 - Una vez domines JavaScript, pasá a React, la biblioteca UI más demandada.
 - Aprendé sobre componentes, props, estado y hooks.
 - Construí interfaces interactivas y apps completas con rutas (routing) y manejo básico de estado.  
@@ -71,7 +61,7 @@ _(La lógica y el motor detrás de tu app)_
 
 Esto es lo que se encarga de la lógica, la autenticación de usuarios y la interacción con la base de datos.
 
-### 👨‍💻 Elegí un lenguaje 🔴
+### 👨‍💻 Elegí un lenguaje 
 - No necesitás aprender 5 lenguajes. Con uno alcanza, y ya que sabés JavaScript, seguí con [Node.js](https://nodejs.org).
 - Otros lenguajes back-end populares (que podés explorar más adelante) incluyen:
   - Python (con Flask o Django)
@@ -80,14 +70,14 @@ Esto es lo que se encarga de la lógica, la autenticación de usuarios y la inte
 
 ---
 
-### 🛠 Usá Express.js 🔴
+### 🛠 Usá Express.js 
 - Es un framework liviano y potente para construir APIs y manejar lógica del lado del servidor.  
 
 🕒 **Tiempo estimado: 2–3 meses**
 
 ---
 
-### 🔐 Agregá Autenticación y Comunicación por API 🔴
+### 🔐 Agregá Autenticación y Comunicación por API 
 - Aprendé a crear y consumir APIs REST.
 - Agregá funciones como login/registro con [Firebase Auth](https://firebase.google.com) o [Passport.js](http://www.passportjs.org).
 - Entendé los métodos HTTP (GET, POST, etc.) y los códigos de estado.
@@ -99,13 +89,13 @@ _(Guardar y recuperar datos de tu app)_
 
 Necesitarás conectar tu backend a una fuente de datos.
 
-### 💾 Empezá con MongoDB 🔴
+### 💾 Empezá con MongoDB 
 - [MongoDB](https://www.mongodb.com) es una base de datos NoSQL que almacena documentos tipo JSON.
 - Aprendé operaciones CRUD, esquemas y cómo conectar con [Mongoose](https://mongoosejs.com).
 
 🕒 **Tiempo estimado: 2–3 semanas**
 
-### 🧮 Luego SQL 🔴
+### 🧮 Luego SQL 
 - Cuando ya estés cómodo con MongoDB, explorá bases de datos relacionales como [PostgreSQL](https://www.postgresql.org) o [MySQL](https://www.mysql.com) para fortalecer tu comprensión de datos estructurados.
 
 ---
@@ -113,7 +103,7 @@ Necesitarás conectar tu backend a una fuente de datos.
 ## 🛠 Infraestructura y Deploy  
 _(Poner tu proyecto en línea y mantenerlo seguro)_
 
-### 🧬 Git y GitHub ✅
+### 🧬 Git y GitHub 
 - Aprendé control de versiones para seguir los cambios en tu código.
 
 - Comandos esenciales:
@@ -131,13 +121,13 @@ _(Poner tu proyecto en línea y mantenerlo seguro)_
 
 ### 🌐 Hosting y Deploy
 **Hosting Front-End:**
-- [Vercel](https://vercel.com) ✅
-- [Netlify](https://netlify.com) ✅
+- [Vercel](https://vercel.com) 
+- [Netlify](https://netlify.com) 
 
 **Hosting Full Stack:**
-- [Render](https://render.com) 🔴
-- [Railway](https://railway.app) 🔴
-- [Fly.io](https://fly.io) 🔴
+- [Render](https://render.com) 
+- [Railway](https://railway.app) 
+- [Fly.io](https://fly.io) 
 
 Aprendé también a:
 - Conectar repos de GitHub
@@ -177,25 +167,6 @@ Vas a mantenerte motivado y resolver problemas más rápido en grupos como:
 - Subreddits como [r/learnprogramming](https://reddit.com/r/learnprogramming) o [r/webdev](https://reddit.com/r/webdev)
 - [IndieHackers](https://indiehackers.com)
 - [Dev.to](https://dev.to)
-
----
-
-## 📚 Recursos Gratuitos Extra
-Plataformas gratis y muy útiles para aprender:
-- [freeCodeCamp](https://www.freecodecamp.org/): Cursos de desarrollo web y diferentes tecnologías
-- [The Odin Project](https://www.theodinproject.com/): Ruta completa para aprender desarrollo web desde cero, con proyectos reales
-- [JavaScript.info](https://javascript.info): Fundamentos JS a fondo
-- [CS50 – Harvard](https://cs50.harvard.edu): Curso completo de informática
-- [Front-end Developer – Meta](https://www.coursera.org/professional-certificates/meta-front-end-developer): Curso Frontend de Meta
-- [Back-end Developer – Meta](https://www.coursera.org/professional-certificates/meta-back-end-developer): Curso Backend de Meta
-- [Frontend Practice](https://www.frontendpractice.com): Desafíos reales de diseño
-- [Node.js Docs](https://nodejs.org/docs/latest/api/): Docs oficiales, pero amigables
-- [MongoDB University](https://university.mongodb.com): Cursos gratis de MongoDB
-- [useHooks.com](https://usehooks.com): Hooks de React reutilizables
-- [Can I Use](https://caniuse.com): Compatibilidad de funciones en navegadores
-- [Grid CSS Generator](https://cssgridgenerator.io/): Generador de Grid CSS
-- [DevDocs](https://devdocs.io/): Documentación de múltiples tecnologías en un solo lugar
-- [Awwwards](https://www.awwwards.com/): Ejemplos de portfolios
 
 ---
 
